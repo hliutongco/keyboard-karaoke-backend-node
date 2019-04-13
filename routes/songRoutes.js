@@ -8,5 +8,5 @@ module.exports = function(app) {
     .get(song.seed_songs);
 
   app.route('/songs/:songId')
-    .put(song.update_song)
+    .patch(song.update_song)
 };
